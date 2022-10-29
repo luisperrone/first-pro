@@ -32,39 +32,49 @@
     </header>
     
     <h1>Contacto</h1>
-        <form action="https://formspree.io/f/xgeqnwnb" method="post">
-            <label>Nombre:
-                <input placeholder="Ingresa tu nombre" type="text" name="Nombre" required>
-            </label>
-            
-                <br>
-
-            <label>Apellido:
-                <input placeholder="Ingresa tu apellido" type="text" name="Apellido" required>
-            </label>
+            <div class="contenedor2">
+        
+                <form action="https://formspree.io/f/xgeqnwnb" method="post">
+                
+                <div class="input-form">
+            <label>Nombre:</label>
+                <input type="text" placeholder="Ingresa tu nombre" id="nombre-contacto" onkeyup="validarnombre()">
+                    <span id="nombre-error"></span>
+                </div>
                 
                 <br>
 
-            <label>Email:
-                <input placeholder="Ingresa tu email" type="text" name="Email" required>
-            </label>
+                <div class="input-form">
+            <label>Apellido:</label>
+                <input type="text" placeholder="Ingresa tu apellido" id="apellido-contacto" onkeyup="validarapellido()">
+                    <span id="apellido-error"></span>
+                </div>
 
                 <br>
-
+                
+                <div class="input-form">
+            <label>Email:</label>
+                <input type="text" placeholder="Ingresa tu email"  id="email-contacto" onkeyup="validaremail()">
+                    <span id="email-error"></span>
+                </div>
+                
+                <br>
+                
+                <div class="input-form">
             <label>
-                <textarea name="comentarios" id="" cols="30" rows="10"></textarea>
+                <textarea name="comentarios" id="comentario-contacto" cols="30" rows="10" onkeyup="validarcomentario()"></textarea>
             </label>
-
+                    <span id="comentario-error"></span>
+                </div>
                 <br>
 
-                <input type="submit" name:Submit>
+                <button onclick="return validarformulario()">submit</button>
+                <span id="submit-error"></span>
 
         </form>
+            </div>
     
-            <script src="scriptcontacto.js">
-                    
-
-            </script>
+            <script src="scriptcontacto.js"></script>
               
               <footer>
         <p class="footerstyle">Seguinos en:</p>

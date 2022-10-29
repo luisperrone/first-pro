@@ -141,7 +141,36 @@ header .menu-icon{
 .fechas .lugar{
     justify-content: first baseline;
 }
+/*contacto*/
 
+.contenedor2{
+    width: 100%;
+    height: 100vh;
+    background: #141a34;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor2 form{
+    width: 90%;
+    max-width: 500px;
+    padding: 50px 30px 20px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.input-form span{
+    position: absolute;
+    font-size: 14px;
+    color: red;
+}
+
+.input-form span i{
+    color: seagreen;
+}
 
 /*footer*/
 footer{
