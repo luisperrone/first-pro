@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="https://kit.fontawesome.com/20bed11a83.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+
+    <header>
+        <div class="contenedor">
+            <div class="logo">
+                <img src="../images/logo.png" alt="">
+                <img class="menu-icon" src="../images/menu.png" alt="">
+            </div>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="index2.html">Home</a></li>
+                        <li><a class="active" href="fechas.html">Recitales</a></li>
+                        <li><a href="discografia2.html">Discografía</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <div class="titular">
+        <h1>
+            Enterate dónde van a estar tocando en sus <span class="verde">próximas fechas. </span> 
+        </h1>
+    </div>
+    <section id="fechas">
+
+        <div class="contenedor">
+            <div class="imagen">
+                <img src="../images/tour.jpg" alt="">
+            </div>
+            <div class="texto">
+                <h2>Próximos recitales.</h2>
+                <p>La Vela Puerca es una de las bandas de rock más populares, convocantes e influyentes de Sudamerica. Acá te dejamos las fechas de sus próximos recitales.</p>
+            </div>
+        </div>
+    </div>
+
+
+        <div class="fechas">
+            <div class="numero">
+                23
+            </div>
+            <div class="fecha">
+                <h5>Oct</h5> <p>2022</p> 
+            </div>
+            <div class="lugar">
+                <h5>Puebla, México. </h5>
+                <p>Parque ecológico.</p> 
+            </div>
+            <div class="boton"><a href="https://www.tecatecomuna.com/boletos">Comprar</a></div>
+        </div>
+
+        <div class="fechas">
+            <div class="numero">
+                27
+            </div>
+            <div class="fecha">
+                <h5>Oct</h5> <p>2022</p> 
+            </div>
+            <div class="lugar">
+                <h5>Monterrey, México. </h5>
+                <p>- Nandas 78 Bar -</p> 
+            </div>
+            <div class="boton"><a href="https://www.ticketmaster.com.mx/la-vela-puerca-monterrey-28-10-2022/event/14005D02868043A7?language=en-mx">Comprar</a></div>
+        </div>
+
+        <div class="fechas">
+            <div class="numero">
+                11
+            </div>
+            <div class="fecha">
+                <h5>Nov</h5> <p>2022</p> 
+            </div>
+            <div class="lugar">
+                <h5>Rio Cuarto, Argentina. </h5>
+                <p>- Multiespacio Cultural - </p> 
+            </div>
+            <div class="boton"><a href="https://www.tecatecomuna.com/boletos">Comprar</a></div>
+        </div>
+        
+
+    </section>
+
+    <footer>
+            <p class="footerstyle">Seguinos en:</p>
+            <section id="redes">
+
+                <a href="https://www.facebook.com/LaVelaPuerca.OFICIAL/"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+
+                <a href="https://www.instagram.com/lavela_oficial/"><i class="fa-brands fa-instagram fa-2xl"></i></a> 
+
+                <a href="https://www.youtube.com/user/velapuercavideos"><i class="fa-brands fa-square-youtube fa-2xl"></i></a> 
+
+            </section>
+            <p class="footerstyle">Todos los derechos reservados</p>
+        </div>
+    </div>
+
+    </footer>
+
+
+    /* para poder abrir y cerrar el menu en responsive*/ 
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <script>
+
+        $(document).ready(function(){
+            $('.menu-icon').click(function(){
+                $('header nav').slideToggle();
+            })
+        })
+    </script>
+
+</body>
+</html>
