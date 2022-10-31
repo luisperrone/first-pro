@@ -50,7 +50,7 @@ nav ul li a{
 
 .menu a:hover {
     background-color: #ddd;
-    color: black;
+    color: #333;
     padding: 5px 10px;
 }
 
